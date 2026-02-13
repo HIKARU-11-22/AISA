@@ -78,19 +78,24 @@ cd AISA
 ```
 
 ### Install Dependencies
+Python packages can be installed from requirements.txt
 
+Before installing Python packages, make sure you have installed followning dependencies for the model to run properly in your ide.
 ```bash
-pip install llama-cpp-python
-pip install sentence-transformers
-pip install scikit-learn
-pip install numpy
+build-essential cmake xorg-dev libvlc-dev \
+portaudio19-dev python3-dev libv4l-dev libpcap-dev
+
 ```
 
 ### Download the Model
 
 Download a quantized GGUF version of:
 
-While the model can not be uploaded to GitHub, you can visit Hugging Face for the same model 
+While the model can not be uploaded to GitHub, you can visit Hugging Face for the same model or
+
+```
+git clone https://github.com/ggml-org/llama.cpp
+```
 
 ```
 mistral-7b-v0.1.Q4_K_M.gguf
