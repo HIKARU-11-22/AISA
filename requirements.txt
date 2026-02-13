@@ -1,0 +1,19 @@
+# The following are all Python libraries that are required to run AISA. Make a copy of this file and pip install -r requirements.txt
+# Core AI & LLM
+llama-cpp-python
+sentence-transformers
+scikit-learn
+numpy
+
+# Computer Vision
+opencv-python
+face_recognition
+
+# Audio & TTS
+sounddevice
+python-vlc
+torch
+pocket-tts
+
+# Utilities
+# (standard libraries like os, subprocess, json, time, etc. are included in Python)
