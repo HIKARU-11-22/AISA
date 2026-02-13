@@ -7,24 +7,24 @@ This project is focused on building a **fully offline, privacy-friendly AI assis
 
 ---
 
-## 🚀 Features (Current)
+## Features (Current)
 
-* 💬 Local conversational AI (powered by Mistral 7B)
-* 🧠 Semantic memory with vector embeddings
-* 📜 Persistent conversation history (`history.jsonl`)
-* 🎵 Local music control system:
+* Local conversational AI (powered by Mistral 7B)
+* Semantic memory with vector embeddings
+* Persistent conversation history (`history.jsonl`)
+* Local music control system:
 
   * Play playlist
   * Play specific song
   * Pause music
   * Resume music
   * Next track
-* 🔎 Context retrieval using cosine similarity
-* 🖥️ Designed for low-spec machines
+* Context retrieval using cosine similarity
+* Designed for low-spec machines
 
 ---
 
-## 🧠 Model Information
+## Model Information
 
 This project uses:
 
@@ -41,7 +41,7 @@ Everything runs **100% locally** — no API calls, no cloud dependency.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * Python 3.10+
 * llama-cpp-python
@@ -53,12 +53,12 @@ Everything runs **100% locally** — no API calls, no cloud dependency.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 AISA/
 │
-├── main.py
+├── assistant.py
 ├── history.jsonl
 ├── music.py
 ├── models/
@@ -73,7 +73,7 @@ AISA/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/AISA.git
+git clone https://github.com/HIKARU-11-22/AISA
 cd AISA
 ```
 
@@ -105,7 +105,7 @@ model_path="your/model/path/mistral-7b-v0.1.Q4_K_M.gguf"
 ## ▶️ Running the Assistant
 
 ```bash
-python main.py
+python assistant.py
 ```
 
 Example commands:
@@ -152,36 +152,36 @@ Tested on:
 
 ---
 
-## 🔮 Planned Features
+## Planned Features
 
 This is an ongoing project. Upcoming features may include:
 
-* 🔊 Voice input/output
-* 🗂️ File system interaction
-* 🌐 Optional offline web search
-* 🖥️ GUI interface
-* 🔐 Encrypted memory storage
-* 📊 Smarter memory indexing
-* 🧩 Plugin system
-* 🏠 Smart home control
-* 🗓️ Task and reminder system
+* Voice input/output
+* File system interaction
+* Optional offline web search
+* GUI interface
+* Encrypted memory storage
+* Smarter memory indexing
+* Plugin system
+* Smart home control
+* Task and reminder system
 
 ---
 
-## 🎯 Project Goal
+## Project Goal
 
 To create a **fully private, offline AI assistant** that anyone can run on affordable hardware — without relying on big tech APIs or cloud services.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project is experimental and under active development.
 Performance depends on hardware and model quantization.
 
 ---
 
-## 📜 License
+## License
 
 This project uses open-source models and libraries.
 Ensure you follow the license terms of:
@@ -192,7 +192,7 @@ Ensure you follow the license terms of:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -207,7 +207,7 @@ Feel free to fork and submit a pull request.
 
 ---
 
-## ⭐ Support the Project
+## Support the Project
 
 If you like the idea of a fully local AI assistant for low-end hardware:
 
