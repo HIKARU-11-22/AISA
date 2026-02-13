@@ -79,13 +79,6 @@ while True:
         print("A.I.S.A.: Playing next track...")
         continue
 
-    # if "play music" in user_input:
-    #     # You can enhance this to accept specific track names
-    #     track = "/home/hikaru/Music/Mrs. GREEN APPLE - インフェルノ（Inferno）.mp3"  # Specify your music file path here
-    #     Thread(target=play_music, args=(track,)).start()
-    #     print("A.I.S.A.: Playing music...")
-    #     continue  # Skip processing for chat and go back to waiting for input
-
     # Load history
     messages, embeddings = load_history()
 
