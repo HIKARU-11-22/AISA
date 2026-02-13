@@ -1,5 +1,4 @@
 import vlc
-# from threading import Thread
 class MusicPlayer:
     def __init__(self):
         self.player = None
@@ -8,6 +7,7 @@ class MusicPlayer:
         self.track_list = []
         self.current_track_index = -1
         self.playlists = {
+            # to make a playlist, put the file path of music and make a playlist.
             'playlist_1': [
                 "/home/hikaru/Music/Mrs. GREEN APPLE - インフェルノ（Inferno）.mp3",
                 # "/home/hikaru/Music/Track2.mp3",
