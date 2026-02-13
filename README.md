@@ -89,6 +89,7 @@ pip install numpy
 ### Download the Model
 
 Download a quantized GGUF version of:
+
 While the model can not be uploaded to GitHub, you can visit Hugging Face for the same model 
 
 ```
