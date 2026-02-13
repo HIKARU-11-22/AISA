@@ -29,7 +29,6 @@ class TTSEngine:
     def speak(self, text: str):
         if not text.strip(): return
         with self.lock:
-            # Clean text of ACTION codes so she doesn't read them aloud
             clean_text = text.split("ACTION_")[0].strip()
             if not clean_text: return
             
@@ -42,7 +41,6 @@ speech = TTSEngine()
 def say(text):
     """Aggressive phonetic correction for A.I.S.A."""
     clean_text = text.split("ACTION_")[0].strip()
-    # If 'aisa' sounds like 'eye-sa', try 'aysa' or 'aysa'.
     phonetic_map = {
         "A.I.S.A.": "eye-sa",
         "A.I.S.A": "eye-sa",
@@ -54,8 +52,6 @@ def say(text):
         clean_text = clean_text.replace(target, replacement)
 
     if not clean_text: return
-    
-    # Send the modified lowercase text to the engine
     Thread(target=speech.speak, args=(clean_text,), daemon=True).start()
 # =========================
 # Paths & Models
@@ -63,9 +59,8 @@ def say(text):
 history_path = "history.jsonl"
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Set verbose=False to keep the terminal clean from Llama logs
 llm = Llama(
-    model_path="/home/hikaru/AI_project/mistral-7b-v0.1.Q4_K_M.gguf",
+    model_path="./mistral-7b-v0.1.Q4_K_M.gguf",
     n_ctx=4096,
     n_gpu_layers=40,
     f16_kv=True,
@@ -133,7 +128,8 @@ def execute_system_action(response):
 
     if "ACTION_SHUTDOWN" in response:
         print("\nA.I.S.A.: Systems closing. Goodbye, Roshan.")
-        # os.system("shutdown /s /t 1") 
+        # You need to uncomment the line below for windows os, else in Linux it is not necessary
+        # os.system("shutdown /s /t 1")
         os.system("sudo shutdown now")
         return True 
 
@@ -190,7 +186,11 @@ def proactive_monitor():
         try:
             time.sleep(60)
             if time.time() - last_interaction_time > 3600: # 1 hour idle
-                print("\n\n[A.I.S.A.]: Roshan, you've been working hard. Should we take a break?")
+                print("\n\n[A.I.S.A.]: Roshan, you've been working hard. Should we take a break?") 
+                """ 
+                This line is to make AISA feel more lively.
+                If the user is idle for an hour while the program is running, it will prompt to take a break.
+                """ 
                 print("User: ", end="", flush=True)
                 last_interaction_time = time.time()
         except Exception as e:
