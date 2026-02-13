@@ -1,5 +1,5 @@
 
-# A.I.S.A. – Local AI Smart Assistant
+# A.I.S.A. – Local AI Simulated Assistant
 
 A.I.S.A. (Artificial Intelligent Simulated Assistant) is a lightweight, local AI assistant designed to run on **low-spec computers** using an optimized open-source language model.
 
