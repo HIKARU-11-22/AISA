@@ -68,16 +68,16 @@ AISA/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/HIKARU-11-22/AISA
 cd AISA
 ```
 
-### 2️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install llama-cpp-python
@@ -86,7 +86,7 @@ pip install scikit-learn
 pip install numpy
 ```
 
-### 3️⃣ Download the Model
+### Download the Model
 
 Download a quantized GGUF version of:
 
@@ -102,7 +102,7 @@ model_path="your/model/path/mistral-7b-v0.1.Q4_K_M.gguf"
 
 ---
 
-## ▶️ Running the Assistant
+## Running the Assistant
 
 ```bash
 python assistant.py
@@ -120,7 +120,7 @@ next track
 
 ---
 
-## 🧠 How Memory Works
+## How Memory Works
 
 * User inputs are converted into embeddings.
 * Stored in `history.jsonl`.
@@ -135,7 +135,7 @@ This enables:
 
 ---
 
-## 💻 Designed for Low-Spec PCs
+## Designed for Low-Spec PCs
 
 The assistant is optimized to:
 
