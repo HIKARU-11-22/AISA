@@ -91,20 +91,21 @@ portaudio19-dev python3-dev libv4l-dev libpcap-dev
 
 Download a quantized GGUF version of:
 
-While the model can not be uploaded to GitHub, you can visit Hugging Face for the same model or
+While the model can not be uploaded to GitHub, you can visit Hugging Face for the same model or try different models
 
 ```
-git clone https://github.com/ggml-org/llama.cpp
-```
-
-```
-mistral-7b-v0.1.Q4_K_M.gguf
+https://huggingface.co/Nagadigital/mistral-7b-v0.1.Q4_K_M.gguf/blob/main/mistral-7b-v0.1.Q4_K_M.gguf
 ```
 
 Place it inside your project folder and update:
 
 ```python
 model_path="your/model/path/mistral-7b-v0.1.Q4_K_M.gguf"
+```
+
+### Install Python Packages
+```bash
+pip install -r requirements.txt
 ```
 
 ---
