@@ -1,0 +1,17 @@
+git clone https://github.com/HIKARU-11-22/AISA
+cd AISA
+
+download a model from hugging face in my case i have used mistral 7b
+https://huggingface.co/Nagadigital/mistral-7b-v0.1.Q4_K_M.gguf/blob/main/mistral-7b-v0.1.Q4_K_M.gguf
+
+edit model path inside code 
+llm = Llama(
+    model_path= your/model/path
+
+create a virtual environment
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+install libraries form requirements.txt
+pip install -r requirements.txt
+
